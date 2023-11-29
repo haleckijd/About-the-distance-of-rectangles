@@ -1,3 +1,6 @@
+"""Documentation to a programm"""
+
+
 def create_rectangle():
     while True:
         print("Введите координату x левой верхней точки прямоугольника")
@@ -16,6 +19,7 @@ def create_rectangle():
 
 
 def int_check():
+    """Function docs"""
     value = input()
     try:
         int(value)
@@ -26,6 +30,7 @@ def int_check():
 
 
 def cg_distance(x1, y1, x2, y2, x3, y3, x4, y4):
+    """Function docs"""
     centre1 = [(x2 - x1) / 2 + x1, (y1 - y2) / 2 + y2]
     centre2 = [(x4 - x3) / 2 + x3, (y3 - y4) / 2 + y4]
     if centre1[0] > centre2[0]:
@@ -40,6 +45,7 @@ def cg_distance(x1, y1, x2, y2, x3, y3, x4, y4):
 
 
 def corner_distance(x1, y1, x2, y2, x3, y3, x4, y4):
+    """Function docs"""
     if x2 > x1:
         deltax1 = x2 - x1
     else:
@@ -64,6 +70,7 @@ def corner_distance(x1, y1, x2, y2, x3, y3, x4, y4):
 
 
 def main():
+    """Function docs"""
     flag1 = False
     flag2 = False
     x1 = None
